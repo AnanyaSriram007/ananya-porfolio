@@ -1,101 +1,101 @@
+/* styles.css */
+
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
+/* Header Styling */
 header {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #343a40;
+    padding: 30px 0;
 }
 
-.carousel {
-    position: relative;
-    margin-bottom: 20px;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.carousel img {
-    width: 100%; /* Make images responsive */
-    max-width: 350px; /* Ensure images don't exceed 350px */
-    height: auto; /* Maintain aspect ratio */
+header p {
+    font-size: 1.2rem;
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    width: 100%;
+    height: 300px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 5px;
+.carousel-caption h5, .carousel-caption p {
     color: white;
-    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item {
+    position: relative;
     text-align: center;
-    font-size: 1rem;
-    max-width: 80%;
-    margin: 10px auto;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    padding: 10px;
+/* About Me Section Styling */
+section {
+    margin-bottom: 50px;
 }
 
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-h2 {
-    color: #6a11cb;
+section h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center;
 }
 
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Skills Section Styling */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-light .container {
+    max-width: 1000px;
+}
+
+.bg-light h2 {
+    font-size: 2rem;
+}
+
+.bg-light .row h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.bg-light .row p {
+    font-size: 1rem;
+}
+
+/* Contact Section Styling */
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 30px 0;
+}
+
+footer h4 {
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 footer a {
-    color: #f9c74f;
-    text-decoration: none;
+    color: #ffc107;
 }
 
 footer a:hover {
     text-decoration: underline;
-}
-
-ul {
-    list-style-type: disc;
-    margin: 0 auto;
-    padding: 0;
-    text-align: left;
-    max-width: 600px;
-}
-
-@media (max-width: 768px) {
-    .carousel img {
-        max-width: 100%;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
 }
 
